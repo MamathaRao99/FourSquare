@@ -1,0 +1,53 @@
+.header {
+  background: var(--header-color);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+}
+.imgLogo {
+  padding: 19px;
+}
+.searchBar {
+  position: relative;
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 10px;
+}
+input {
+  height: 35px;
+  width: 100%;
+  border-radius: 22.14px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  padding: 25px;
+}
+.searchIcon {
+  position: absolute;
+  top: 30%;
+  padding: 0 5px;
+}
+.formdiv {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .imgLogo {
+    display: none;
+  }
+  input {
+    border-radius: 0px;
+    margin: 5px;
+  }
+}
